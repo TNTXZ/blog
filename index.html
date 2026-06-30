@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNTXZ's blog</title>
+    <link rel="stylesheet" type="text/css" href="./assests/css/loading.css">
+    <style>
+        .loading-overlay {
+            position: fixed;
+            inset: 0;
+            background: #fff;
+            z-index: 9999;
+            opacity: 1;
+            transition: opacity 0.6s ease;
+            pointer-events: auto;
+            overflow: hidden;
+        }
+        .loading-overlay.fade-out {
+            opacity: 0;
+            pointer-events: none;
+        }
+        .main-content {
+            display: none;
+        }
+        .main-content.show {
+            display: block;
+        }
+    </style>
+    <script src="./assests/js/loading.js"></script>
+</head>
+<body>
+    <div id="loading" class="loading-overlay">
+        <div class="progress-bar">
+            <div class="progress-bar-fill"></div>
+        </div>
+        <div class="semicircle">
+            <div class="circle-roller">
+                <div class="avatar">
+                    <img src="./assests/img/head.png" alt="Avatar">
+                </div>
+            </div>
+        </div>
+        <div class="taichi">
+            <img src="./assests/img/taichi.svg" alt="Taichi">
+        </div>
+        <div class="loadtext"></div>
+    </div>
+
+    <div id="main" class="main-content">
+        <p>this is a test</p>
+    </div>
+</body>
+</html>
