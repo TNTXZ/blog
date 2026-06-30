@@ -1,0 +1,23 @@
+body {
+    background: #f7f9fe;
+}
+.loading-overlay {
+    position: fixed;
+    inset: 0;
+    background: #fff;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.6s ease;
+    pointer-events: auto;
+    overflow: hidden;
+}
+.loading-overlay.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+.main-content {
+    display: none;
+}
+.main-content.show {
+    display: block;
+}
